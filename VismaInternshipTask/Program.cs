@@ -8,7 +8,7 @@ namespace VismaResourceShortage
     {
         static void Main(string[] args)
         {
-            var Path = "../../../test.json";
+            var Path = "../../../shortages.json";
             var shortageRepository = new ShortageRepository(Path);
             var shortageService = new ShortageService(shortageRepository);
             var shortageManager = new ShortageManager(shortageService);
